@@ -1,3 +1,5 @@
+import styles from "./styles.module.css";
+
 export const Modular = () => {
   return (
     <section id="modular" className="py-20 px-6 bg-black">
@@ -37,16 +39,7 @@ export const Modular = () => {
             className="bg-white  border border-gray-700 rounded-lg flex items-center justify-center"
             style={{ height: "550px" }}
           >
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                backgroundImage: 'url("public/module-terafit.jpg")',
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            />
+            <div className={styles.moduleImage} />
           </div>
         </div>
       </div>

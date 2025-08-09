@@ -31,12 +31,14 @@ export const Modular = () => {
             <p className="mt-8 text-gray-400">
               <strong className="text-white">
                 Одна рама — бесконечные возможности.
-              </strong>{" "}
+              </strong>
+              <br />
+              <br />
               Апгрейд без замены оборудования.
             </p>
           </div>
           <div
-            className="bg-white  border border-gray-700 rounded-lg flex items-center justify-center"
+            className="bg-white  border border-gray-700 flex items-center justify-center"
             style={{ height: "550px" }}
           >
             <div className={styles.moduleImage} />

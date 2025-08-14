@@ -52,6 +52,26 @@
 .rama-2 {
   background-image: url("/public/rama-2.JPG");
 }
+
+.compl-1{
+  background-image: url("/public/products/compl-1.jpg");
+}
+
+.compl-2{
+  background-image: url("/public/products/compl-2.jpg");
+}
+
+.compl-3{
+  background-image: url("/public/products/compl-3.jpg");
+}
+
+.compl-5{
+  background-image: url("/public/products/compl-5.jpg");
+}
+
+.compl-6{
+  background-image: url("/public/products/compl-6.jpg");
+}
 table {
   width: 100%;
 }

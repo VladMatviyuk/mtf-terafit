@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,17 +14,17 @@ export const Header = () => {
   // Запрет скролла при открытом меню
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     };
   }, [isOpen]);
 
   return (
-    <nav className="flex justify-between items-center p-6 bg-black relative z-50">
+    <nav className="sticky top-0 flex justify-between items-center p-5 bg-black relative z-50 border-b-1 border-white">
       {/* Логотип */}
       <div className="text-2xl font-bold text-white">
         <span className="text-red-600">Т</span>ерафит
@@ -73,8 +73,8 @@ export const Header = () => {
       <div
         className={`fixed top-0 right-0 w-4/5 max-w-xs h-full bg-black z-40 transform transition-all duration-500 ease-out shadow-2xl ${
           isOpen
-            ? "translate-x-0 opacity-100"
-            : "translate-x-full opacity-0 pointer-events-none"
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-full opacity-0 pointer-events-none'
         }`}
         onClick={handleMenuClick}
       >
@@ -82,11 +82,12 @@ export const Header = () => {
         <div className="flex flex-col p-8 h-full pt-24">
           <div className="space-y-10">
             {[
-              { href: "#features", label: "Преимущества" },
-              { href: "#modular", label: "Модульность" },
-              { href: "#gallery", label: "Галерея" },
-              { href: "#docs", label: "Документы" },
-              { href: "#contact", label: "Контакты" },
+              { href: '#features', label: 'Преимущества' },
+              { href: '#modular', label: 'Модульность' },
+              { href: '#products', label: 'Каталог' },
+              { href: '#gallery', label: 'Галерея' },
+              { href: '#docs', label: 'Документы' },
+              { href: '#contact', label: 'Контакты' },
             ].map((item, index) => (
               <a
                 key={item.href}
@@ -119,6 +120,12 @@ export const Header = () => {
           className="hover:text-red-500 transition-colors duration-300"
         >
           Модульность
+        </a>
+        <a
+          href="#products"
+          className="hover:text-red-500 transition-colors duration-300"
+        >
+          Каталог
         </a>
         <a
           href="#gallery"

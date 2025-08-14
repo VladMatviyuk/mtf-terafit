@@ -7,7 +7,7 @@ import { Gallery } from './components/Gallery/Gallery';
 import { Hero } from './components/Hero/Hero';
 import { Header } from './components/inxdex';
 import { Modular } from './components/Modular/Modular';
-// import { Products } from './components/Products/Products';
+import { Products } from './components/Products/Products';
 import { Quality } from './components/Quality/Quality';
 import { Usage } from './components/Usage/Usage';
 
@@ -18,7 +18,7 @@ function App() {
       <Hero />
       <Features />
       <Modular />
-      {/* <Products /> */}
+      <Products />
       <Usage />
       <Quality />
       <Gallery />

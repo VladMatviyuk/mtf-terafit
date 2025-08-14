@@ -25,7 +25,7 @@ const images = [
   "/gallery/IMG_2734.JPG",
 ];
 
-export default function Gallery() {
+export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (

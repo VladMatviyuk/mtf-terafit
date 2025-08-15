@@ -194,9 +194,9 @@ export const Products = () => {
               Комплектация №5
             </div>
             <div className="flex justify-center">
-              {/* <p className="text-white bg-black w-54 p-4 text-center ">
-                Цена: ???&#8381;
-              </p> */}
+              <p className="text-white bg-black w-54 p-4 text-center ">
+                Цена: 287 700&#8381;
+              </p>
             </div>
           </div>
         </div>

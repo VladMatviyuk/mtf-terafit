@@ -9,4 +9,9 @@ export const Complex = [
     image: '4.02.jpg',
     price: '141300',
   },
+  {
+    name: 'Комплект 4.03',
+    image: '4.03.jpg',
+    price: '182300',
+  },
 ];

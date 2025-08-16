@@ -1,4 +1,8 @@
+import { Complex } from '../../entities/complex/data';
+import { Modules } from '../../entities/modules/data';
+
 export const Products = () => {
+  console.log(Modules);
   return (
     <section id="products" className="pt-20 px-6">
       <div className="max-w-6xl mx-auto text-start">
@@ -13,13 +17,13 @@ export const Products = () => {
               boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
             }}
           >
-            <div className="ramaImage rama-1"></div>
-            <div className="text-gray-700 text-xl text-center mt-4">
+            <div className="text-gray-700 text-xl text-center my-4 font-bold">
               Силовая рама 4 столба
             </div>
+            <div className="ramaImage rama-1"></div>
             <div className="flex justify-center">
               <p className="text-white bg-black w-54 p-4 text-center ">
-                Цена: 75 400&#8381;
+                Цена: 75400&#8381;
               </p>
             </div>
           </div>
@@ -29,84 +33,85 @@ export const Products = () => {
               boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
             }}
           >
-            <div className="ramaImage rama-2"></div>
-            <div className="text-gray-700 text-xl text-center mt-4">
+            <div className="text-gray-700 text-xl text-center mt-4 font-bold">
               Силовая рама 6 столбов
             </div>
+            <div className="ramaImage rama-2"></div>
             <div className="flex justify-center">
               <p className="text-white bg-black w-54 p-4 text-center ">
-                Цена: 115 100&#8381;
+                Цена: 115100&#8381;
               </p>
             </div>
           </div>
         </div>
 
-        {/* <h3 className="text-2xl md:text-4xl font-bold mt-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold my-16 text-center">
           Модули
-        </h3>
+        </h2>
 
-        <h3 className="text-xl md:text-3xl font-bold mt-16 text-center">
-          Элементы рамы
-        </h3>
-        <h3 className="text-xl md:text-3xl font-bold mt-16 text-center">
-          Навесные элементы
-        </h3>
-        <h3 className="text-xl md:text-3xl font-bold mt-16 text-center">
-          Скамейки
-        </h3>
-        <h3 className="text-xl md:text-3xl font-bold mt-16 text-center">
-          Свободный вес
-        </h3> */}
-        {/* <table className="mt-12">
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-          <tr>
-            <td className="table-image">
-              <img src="/public/module-1.jpg" alt="module-1" />
-            </td>
-            <td>Наименование детали 1</td>
-            <td>14 600&#8381;</td>
-          </tr>
-        </table> */}
+        <div className="grid grid-cols md:grid-cols-3 grid-rows-5 gap-4">
+          {Modules.map((module) => {
+            if (!module.iamge || !module.price) return;
+            return (
+              <div
+                className="bg-white p-4 border border-gray-700 duration-300 flex flex-col justify-between"
+                style={{
+                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
+                }}
+              >
+                <div className="moduleImage">
+                  <div className="text-gray-700 text-xl text-center font-bold">
+                    {module.name}
+                  </div>
+                  <img
+                    className="my-8"
+                    src={`modules/${module?.iamge ?? '404.png'}`}
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="flex justify-center">
+                    <p className="text-white bg-black w-48 p-4 text-center text-sm ">
+                      Цена: {module.price}&#8381;
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
         <h2 className="text-3xl md:text-4xl font-bold text-center my-16">
-          Базовые комплектации
+          Готовые решения
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
+          {Complex.map((compl) => {
+            return (
+              <div
+                className="bg-white p-8 border border-gray-700 duration-300 flex flex-col gap-6"
+                style={{
+                  boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.9)',
+                }}
+              >
+                <div className="text-gray-700 text-xl text-center font-bold">
+                  {compl.name}
+                </div>
+                <div className="coplexImage my-6">
+                  <img src={`complex/${compl.image}`} alt={compl.image} />
+                </div>
+
+                <div className="flex justify-center">
+                  <p className="text-white bg-black w-54 p-4 text-center ">
+                    Цена: {compl.price}&#8381;
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* <div className="grid md:grid-cols-3 gap-8">
           <div
             className="bg-white p-8 border border-gray-700 duration-300 flex flex-col gap-6"
             style={{
@@ -199,7 +204,7 @@ export const Products = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

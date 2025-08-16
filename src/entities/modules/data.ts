@@ -203,4 +203,16 @@ export const Modules = [
     price: '',
     iamge: undefined,
   },
+  {
+    id: 35,
+    name: 'Скамья универсальная (карбон)',
+    price: '30000',
+    iamge: '35.png',
+  },
+  {
+    id: 36,
+    name: 'Скамья универсальная',
+    price: '25000',
+    iamge: '36.png',
+  },
 ];

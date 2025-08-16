@@ -104,7 +104,7 @@ export const Modules = [
   {
     id: 18,
     name: 'Ручка с дискодержателем',
-    price: '',
+    price: '4000',
     iamge: '18.png',
   },
   {

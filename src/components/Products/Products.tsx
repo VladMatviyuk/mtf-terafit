@@ -2,6 +2,13 @@ import { Complex } from '../../entities/complex/data';
 import { Modules } from '../../entities/modules/data';
 
 export const Products = () => {
+  function formatNumber(str: string) {
+    const num = parseInt(str, 10);
+    if (isNaN(num)) return str;
+
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  }
+
   return (
     <section id="products" className="pt-20 px-6">
       <div className="max-w-6xl mx-auto text-start">
@@ -22,7 +29,7 @@ export const Products = () => {
             <div className="ramaImage rama-1"></div>
             <div className="flex justify-center">
               <p className="text-white bg-black w-54 p-4 text-center ">
-                Цена: 75400&#8381;
+                Цена: 75 400&#8381;
               </p>
             </div>
           </div>
@@ -38,7 +45,7 @@ export const Products = () => {
             <div className="ramaImage rama-2"></div>
             <div className="flex justify-center">
               <p className="text-white bg-black w-54 p-4 text-center ">
-                Цена: 115100&#8381;
+                Цена: 115 100&#8381;
               </p>
             </div>
           </div>
@@ -71,7 +78,7 @@ export const Products = () => {
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-center">
                     <p className="text-white bg-black w-48 p-4 text-center text-sm ">
-                      Цена: {module.price}&#8381;
+                      Цена: {formatNumber(module.price)}&#8381;
                     </p>
                   </div>
                 </div>
@@ -102,7 +109,7 @@ export const Products = () => {
 
                 <div className="flex justify-center">
                   <p className="text-white bg-black w-54 p-4 text-center ">
-                    Цена: {compl.price}&#8381;
+                    Цена: {formatNumber(compl.price)}&#8381;
                   </p>
                 </div>
               </div>

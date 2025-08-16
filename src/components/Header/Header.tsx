@@ -134,12 +134,6 @@ export const Header = () => {
           Галерея
         </a>
         <a
-          href="#docs"
-          className="hover:text-red-500 transition-colors duration-300"
-        >
-          Документация
-        </a>
-        <a
           href="#contact"
           className="hover:text-red-500 transition-colors duration-300"
         >

@@ -2,7 +2,6 @@ import { Complex } from '../../entities/complex/data';
 import { Modules } from '../../entities/modules/data';
 
 export const Products = () => {
-  console.log(Modules);
   return (
     <section id="products" className="pt-20 px-6">
       <div className="max-w-6xl mx-auto text-start">

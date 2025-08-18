@@ -92,8 +92,8 @@ export const Modules = [
   {
     id: 16,
     name: 'Фиксатор жгутов',
-    price: '',
-    iamge: undefined,
+    price: '750',
+    iamge: '16.png',
   },
   {
     id: 17,
@@ -116,20 +116,20 @@ export const Modules = [
   {
     id: 20,
     name: 'Держатель грифа',
-    price: '',
+    price: '1 500',
     iamge: '20.png',
   },
   {
     id: 21,
     name: 'Брусья',
-    price: '',
-    iamge: undefined,
+    price: '12000',
+    iamge: '21.png',
   },
   {
     id: 22,
     name: 'Валик 400',
-    price: '',
-    iamge: undefined,
+    price: '3500',
+    iamge: '22.png',
   },
   {
     id: 23,
@@ -140,14 +140,14 @@ export const Modules = [
   {
     id: 24,
     name: 'Дискодержатель 200',
-    price: '',
-    iamge: undefined,
+    price: '2500',
+    iamge: '24.png',
   },
   {
     id: 25,
     name: 'Дискодержатель 350',
-    price: '',
-    iamge: undefined,
+    price: '3000',
+    iamge: '25.png',
   },
   {
     id: 26,

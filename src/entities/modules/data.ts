@@ -116,7 +116,7 @@ export const Modules = [
   {
     id: 20,
     name: 'Держатель грифа',
-    price: '1 500',
+    price: '1500',
     iamge: '20.png',
   },
   {

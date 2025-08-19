@@ -59,10 +59,10 @@ export const Complex = [
           iamge: '10.png',
         },
         {
-          id: 8,
-          name: 'Модуль бокового ГП (свободный вес)',
-          price: '38900',
-          iamge: '8.png',
+          id: 6,
+          name: 'Модуль заднего ГП (свободный вес)',
+          price: '44800',
+          iamge: '6.png',
         },
         {
           id: 26,

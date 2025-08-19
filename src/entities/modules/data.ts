@@ -152,19 +152,19 @@ export const Modules = [
   {
     id: 26,
     name: 'Тяга широкая',
-    price: '',
-    iamge: undefined,
+    price: '1500',
+    iamge: '26.png',
   },
   {
     id: 27,
     name: 'Тяга 2 руками узкий хват',
-    price: '',
+    price: '1200',
     iamge: '27.png',
   },
   {
     id: 28,
     name: 'W - Ручка',
-    price: '',
+    price: '1400',
     iamge: '28.png',
   },
   {

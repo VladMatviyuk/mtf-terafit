@@ -1,40 +1,501 @@
-export const Complex4 = [
+export const Complex = [
   {
     name: 'Комплект 4.01',
     image: '4.01.jpg',
     price: '92400',
+    modules: {
+      core: {
+        name: 'Силовая рама 4 столба',
+        image: 'rama-1.JPG',
+      },
+      elements: [
+        {
+          id: 3,
+          name: 'Турник',
+          price: '1800',
+          iamge: '3.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+      ],
+    },
   },
   {
     name: 'Комплект 4.02',
     image: '4.02.jpg',
     price: '141300',
+    modules: {
+      core: {
+        name: 'Силовая рама 4 столба',
+        image: 'rama-1.JPG',
+      },
+      elements: [
+        {
+          id: 3,
+          name: 'Турник',
+          price: '1800',
+          iamge: '3.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+        {
+          id: 8,
+          name: 'Модуль бокового ГП (свободный вес)',
+          price: '38900',
+          iamge: '8.png',
+        },
+        {
+          id: 26,
+          name: 'Тяга широкая',
+          price: '1500',
+          iamge: '26.png',
+        },
+        {
+          id: 27,
+          name: 'Тяга 2 руками узкий хват',
+          price: '1200',
+          iamge: '27.png',
+        },
+        {
+          id: 28,
+          name: 'W - Ручка',
+          price: '1400',
+          iamge: '28.png',
+        },
+      ],
+    },
   },
   {
     name: 'Комплект 4.03',
     image: '4.03.jpg',
     price: '182300',
+    modules: {
+      core: {
+        name: 'Силовая рама 4 столба',
+        image: 'rama-1.JPG',
+      },
+      elements: [
+        {
+          id: 2,
+          name: 'Верхняя балка с лого',
+          price: '10500',
+          iamge: '2.png',
+        },
+        {
+          id: 3,
+          name: 'Турник',
+          price: '1800',
+          iamge: '3.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+        {
+          id: 5,
+          name: 'Модуль заднего ГП 80 кг',
+          price: '79600',
+          iamge: '5.png',
+        },
+        {
+          id: 19,
+          name: 'Тяга грифа',
+          price: '1500',
+          iamge: '19.png',
+        },
+        {
+          id: 20,
+          name: 'Держатель грифа',
+          price: '1500',
+          iamge: '20.png',
+        },
+        {
+          id: 26,
+          name: 'Тяга широкая',
+          price: '1500',
+          iamge: '26.png',
+        },
+        {
+          id: 27,
+          name: 'Тяга 2 руками узкий хват',
+          price: '1200',
+          iamge: '27.png',
+        },
+        {
+          id: 28,
+          name: 'W - Ручка',
+          price: '1400',
+          iamge: '28.png',
+        },
+      ],
+    },
   },
-];
-
-export const Complex6 = [
   {
     name: 'Комплект 6.01',
     image: '6.01.png',
     price: '131200',
+    modules: {
+      core: {
+        name: 'Силовая рама 6 столбов',
+        image: 'rama2.2.jpg',
+      },
+      elements: [
+        {
+          id: 2,
+          name: 'Верхняя балка с лого',
+          price: '10500',
+          iamge: '2.png',
+        },
+        {
+          id: 4,
+          name: 'Турник разнохват',
+          price: '4000',
+          iamge: '4.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+      ],
+    },
   },
   {
     name: 'Комплект 6.02',
     image: '6.02.png',
     price: '221900',
+    modules: {
+      core: {
+        name: 'Силовая рама 6 столбов',
+        image: 'rama2.2.jpg',
+      },
+      elements: [
+        {
+          id: 2,
+          name: 'Верхняя балка с лого',
+          price: '10500',
+          iamge: '2.png',
+        },
+        {
+          id: 3,
+          name: 'Турник',
+          price: '1800',
+          iamge: '3.png',
+        },
+        {
+          id: 4,
+          name: 'Турник разнохват ',
+          price: '4000',
+          iamge: '4.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+        {
+          id: 12,
+          name: 'Платформа',
+          price: '15000',
+          iamge: '12.png',
+        },
+        {
+          id: 16,
+          name: 'Фиксатор жгутов (4шт)',
+          price: '750',
+          iamge: '16.png',
+        },
+        {
+          id: 17,
+          name: 'Поворотный модуль (2шт)',
+          price: '15000',
+          iamge: '17.png',
+        },
+        {
+          id: 18,
+          name: 'Ручка с дискодержателем (2шт)',
+          price: '4000',
+          iamge: '18.png',
+        },
+        {
+          id: 19,
+          name: 'Тяга грифа',
+          price: '1500',
+          iamge: '19.png',
+        },
+        {
+          id: 20,
+          name: 'Держатель грифа',
+          price: '1500',
+          iamge: '20.png',
+        },
+        {
+          id: 21,
+          name: 'Брусья',
+          price: '12000',
+          iamge: '21.png',
+        },
+        {
+          id: 24,
+          name: 'Дискодержатель 200 (4шт)',
+          price: '2500',
+          iamge: '24.png',
+        },
+        {
+          id: 25,
+          name: 'Дискодержатель 350 (6шт)',
+          price: '3000',
+          iamge: '25.png',
+        },
+      ],
+    },
   },
   {
     name: 'Комплект 6.03',
     image: '6.03.png',
     price: '309200',
+    modules: {
+      core: {
+        name: 'Силовая рама 6 столбов',
+        image: 'rama2.2.jpg',
+      },
+      elements: [
+        {
+          id: 2,
+          name: 'Верхняя балка с лого',
+          price: '10500',
+          iamge: '2.png',
+        },
+        {
+          id: 4,
+          name: 'Турник разнохват ',
+          price: '4000',
+          iamge: '4.png',
+        },
+        {
+          id: 8,
+          name: 'Модуль бокового ГП (свободный вес) (2шт)',
+          price: '38900',
+          iamge: '8.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+        {
+          id: 12,
+          name: 'Платформа',
+          price: '15000',
+          iamge: '12.png',
+        },
+        {
+          id: 13,
+          name: 'Подушка для платформы',
+          price: '6600',
+          iamge: '13.png',
+        },
+        {
+          id: 17,
+          name: 'Поворотный модуль (2шт)',
+          price: '15000',
+          iamge: '17.png',
+        },
+        {
+          id: 18,
+          name: 'Ручка с дискодержателем (2шт)',
+          price: '4000',
+          iamge: '18.png',
+        },
+        {
+          id: 19,
+          name: 'Тяга грифа',
+          price: '1500',
+          iamge: '19.png',
+        },
+        {
+          id: 20,
+          name: 'Держатель грифа',
+          price: '1500',
+          iamge: '20.png',
+        },
+        {
+          id: 21,
+          name: 'Брусья',
+          price: '12000',
+          iamge: '21.png',
+        },
+        {
+          id: 22,
+          name: 'Валик 400',
+          price: '3500',
+          iamge: '22.png',
+        },
+        {
+          id: 24,
+          name: 'Дискодержатель 200 (2шт)',
+          price: '2500',
+          iamge: '24.png',
+        },
+        {
+          id: 25,
+          name: 'Дискодержатель 350 (4шт)',
+          price: '3000',
+          iamge: '25.png',
+        },
+      ],
+    },
   },
   {
     name: 'Комплект 6.04',
     image: '6.04.png',
     price: '377200',
+    modules: {
+      core: {
+        name: 'Силовая рама 6 столбов',
+        image: 'rama2.2.jpg',
+      },
+      elements: [
+        {
+          id: 2,
+          name: 'Верхняя балка с лого',
+          price: '10500',
+          iamge: '2.png',
+        },
+        {
+          id: 4,
+          name: 'Турник разнохват ',
+          price: '4000',
+          iamge: '4.png',
+        },
+        {
+          id: 7,
+          name: 'Модуль бокового ГП 80кг (2шт)',
+          price: '69900',
+          iamge: '7.png',
+        },
+        {
+          id: 9,
+          name: 'Крюк для грифа (2шт)',
+          price: '5000',
+          iamge: '9.png',
+        },
+        {
+          id: 10,
+          name: 'Страховочная балка внутренняя (2шт)',
+          price: '12000',
+          iamge: '10.png',
+        },
+        {
+          id: 12,
+          name: 'Платформа',
+          price: '15000',
+          iamge: '12.png',
+        },
+        {
+          id: 13,
+          name: 'Подушка для платформы',
+          price: '6600',
+          iamge: '13.png',
+        },
+        {
+          id: 17,
+          name: 'Поворотный модуль (2шт)',
+          price: '15000',
+          iamge: '17.png',
+        },
+        {
+          id: 18,
+          name: 'Ручка с дискодержателем (2шт)',
+          price: '4000',
+          iamge: '18.png',
+        },
+        {
+          id: 19,
+          name: 'Тяга грифа',
+          price: '1500',
+          iamge: '19.png',
+        },
+        {
+          id: 20,
+          name: 'Держатель грифа',
+          price: '1500',
+          iamge: '20.png',
+        },
+        {
+          id: 21,
+          name: 'Брусья',
+          price: '12000',
+          iamge: '21.png',
+        },
+        {
+          id: 22,
+          name: 'Валик 400',
+          price: '3500',
+          iamge: '22.png',
+        },
+        {
+          id: 24,
+          name: 'Дискодержатель 200 (2шт)',
+          price: '2500',
+          iamge: '24.png',
+        },
+        {
+          id: 25,
+          name: 'Дискодержатель 350 (6шт)',
+          price: '3000',
+          iamge: '25.png',
+        },
+      ],
+    },
   },
 ];

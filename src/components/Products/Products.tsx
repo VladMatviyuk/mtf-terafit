@@ -4,7 +4,7 @@ import { Modules } from '../../entities/modules/data';
 
 export const Products = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [complex, setComplex] = useState(undefined);
+  const [complex, setComplex] = useState<any>(undefined);
 
   const handleOpenModel = (complex?: any) => {
     if (isOpen) {
@@ -171,7 +171,7 @@ export const Products = () => {
                 </div>
 
                 <h3 className="text-xl text-left font-bold my-1">Модули</h3>
-                {complex.modules.elements.map((element) => (
+                {complex.modules.elements.map((element: any) => (
                   <div
                     key={element.name}
                     className="flex justify-between items-center border-b border-gray-300 py-2"
